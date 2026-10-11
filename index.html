@@ -1,15 +1,13 @@
-
-
+<!DOCTYPE html>
+<!-- MCU Tracker Firebase V7 Cloud Sync -->
+<html lang="en">
+<head>
 <style id="manual-media-link-style">
 .media-actions .download-btn,
 .media-actions .trailer-btn { text-decoration:none; cursor:pointer; }
 .media-actions button:disabled { opacity:.6; cursor:not-allowed; }
 </style>
 
-<!-- MCU Tracker Firebase V7 Cloud Sync -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
 <meta name="theme-version" content="V10 • Admin Control Center">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -5261,6 +5259,7 @@ document.body.appendChild(status);
 })();
 </script>
 
+<script type="module">
 /* ═══════════════════════════════════════════════════════════
    MCU TRACKER — MASTER ADMIN PANEL
    TMDB search + Firestore CRUD + Users + Timers
@@ -5973,6 +5972,8 @@ if (!auth || !db) {
 }
 
 
+</script>
+
 <script id="doomsday-timer-js">
 (function(){
   "use strict";
@@ -6016,10 +6017,7 @@ if (!auth || !db) {
   }
 })();
 
+</script>
+
 </body>
 </html>
-
-<script>
-/* Manual media-link helper is available to existing movie-card templates. */
-window.getManualMediaLinks = window.getManualMediaLinks || getManualMediaLinks;
-</script>
